@@ -1,0 +1,17 @@
+PROGRAM STRUCTURE
+
+notestool/ package main
+|
+|- main.go (Help message, Menu, Structure for collection, Password prompt and verification) 
+|- saver.go (Save note to collection file)
+|- createfile.go (Generate note's ID, Adds note and calls for Saver)
+|- readfile.go (Display all notes in the collection)
+|- deletefile.go (Delete note and save the updated notes)
+README.md
+
+EDGE CASES:
+- invalid input (not a number from menu)
+- invalid note (more than one line)
+- invalid note (empty note)
+- invalid deletion (invalid note's ID)
+- show notes if all notes deleted
